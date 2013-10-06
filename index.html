@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>NearME</title>
+
+        <meta name="DC.Language" content="es_ES" />
+        <meta name="DC.Publisher" content="Andr&#xE9;s Nieto" />
+        <meta name="DC.Creator" content="Andr&#xE9;s Nieto" />
+        <meta content="index,follow" name="robots" />
+        <meta name="description" content="&#10;&#9;&#9;&#9;&#9;Noticias Publicadas de Meneame.net&#10;&#9;&#9;&#9;" />
+        <meta name="DC.Title" content="nearme" />
+        
+        <meta name="viewport" content="initial-scale=0.8; maximum-scale=0.8; user-scalable=no;" />
+    
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js" type="text/javascript"></script>
+		<script src="js/handlebars.min.js" type="text/javascript"></script>
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <link rel="stylesheet" href="css/main.min.css" media="screen" />
+
+
+		<link rel='stylesheet' href='css/jquery-colorbox/colorbox.css' type='text/css' media='screen' />
+<script type='text/javascript' src='js/jquery-colorbox/jquery.colorbox-min.js'></script>
+<link rel='stylesheet' href='css/jquery.justifiedgallery.min.css' type='text/css' media='all' />
+<script type='text/javascript' src='js/jquery.justifiedgallery.min.js'></script>
+    </head>
+	<body>
+		<header id="header">
+			<h1>NearME</h1>
+		</header>
+		<section id="content">
+		 <script id="gallery_template" type="text/x-handlebars-template">
+
+		 	<div id="gallery">
+		 		{{#each photo}}
+		 		<a href="http://farm{{farm}}.staticflickr.com/{{server}}/{{id}}_{{secret}}.jpg" title="{{title}}">
+		 			<img src="http://farm{{farm}}.staticflickr.com/{{server}}/{{id}}_{{secret}}_m.jpg" alt="{{title}}" />
+		 		</a>
+		 		{{/each}}
+		 	</div>
+		 </script>
+
+		</section>
+		<section id="footer">
+			<p>Desarrollado por Andrés Nieto</p>
+		</section>
+		<script src="js/main.min.js" type="text/javascript"></script>
+	</body>
+</html>
