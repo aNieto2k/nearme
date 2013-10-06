@@ -1,5 +1,5 @@
 if ("geolocation" in navigator) {
-   var YQL = "http://api.flickr.com/services/rest/?method=flickr.photos.search&lat={latitude}&lon={longitude}&radius=5&page=1&per_page=10&api_key=b8c6508b16ee8a544616f89c609cb114&format=json&nojsoncallback=1&per_page=150";
+   var YQL = "http://api.flickr.com/services/rest/?method=flickr.photos.search&lat={latitude}&lon={longitude}&radius=5&page=1&per_page=10&api_key=b8c6508b16ee8a544616f89c609cb114&format=json&nojsoncallback=1&per_page=50";
   
   var $content = $("#content");
   var source   = $("#gallery_template").html();
