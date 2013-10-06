@@ -10,7 +10,7 @@ header{
 }
 
 .loading {
-	background: url(loading.gif) center center;
+	background: url(loading.gif) center center no-repeat;
 }
 
 #footer p{
