@@ -34,11 +34,15 @@
 			<h1>NearME</h1>
 		</header>
 		<section id="content">
+			<!--form action="#items"
+				<label for="items">Nºitems: </label>
+				<input type="number" min="25" max="500" step="10" value="50" id="items">
+			</form-->
 		 <script id="gallery_template" type="text/x-handlebars-template">
 
 		 	<div id="gallery">
 		 		{{#each photo}}
-		 		<a href="http://farm{{farm}}.staticflickr.com/{{server}}/{{id}}_{{secret}}.jpg" title="{{title}}">
+		 		<a href="http://farm{{farm}}.staticflickr.com/{{server}}/{{id}}_{{secret}}.jpg" title="{{title}}/{{}}">
 		 			<img src="http://farm{{farm}}.staticflickr.com/{{server}}/{{id}}_{{secret}}_m.jpg" alt="{{title}}" />
 		 		</a>
 		 		{{/each}}
